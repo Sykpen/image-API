@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Canvas</title>
+</head>
+<script type="text/javascript" src="dist/bundle.js"></script>
+<body>
+    <main>
+        <div class="top_menu">
+            <div class="navicon"><img src="img/navicon.png"></div>
+            <div class="menuicon"><img src="img/menuicon.png"></div>
+            <h1>CodeJam - Pallete</h1>
+        </div>
+        <div class="left_menu1">
+            <ul>
+                <li class="left_menu1_item" id="bucket"><img src="img/li11.png">Paint bucket</li>
+                <li class="left_menu1_item"><img src="img/li12.png" id="colorpicker">Choose color</li>
+                <li class="left_menu1_item" id="pencil"><img src="img/pencil.png">Pencil</li>
+                <li class="left_menu1_item" id="clean"><img src="img/li14.png">Clean Canvas</li>
+            </ul>
+        </div>
+        <div class="left_menu2">
+            <ul>
+                <li class="left_menu2_item"><input type="color" id="colorselect"> Choose color</li>
+                <li class="left_menu2_item" id="previouscolor">Previous color</li>
+                <li class="left_menu2_item" id="redcolor"><img src="img/li23.png">Red</li>
+                <li class="left_menu2_item" id="bluecolor"><img src="img/li24.png">Blue</li>
+            </ul>
+        </div>
+        <canvas id="canvas"></canvas>
+        <div id="control_menu">
+        <ul>
+            <li class="control_menu_item" id="button4x4"><p>4X4</p></li>
+            <li class="control_menu_item" id="button32x32"><p>32X32</p></li>
+            <li class="control_menu_item" id="button128x128"><p>128X128</p></li>
+            <li class="control_menu_item" id="button256x256"><p>256X256</p></li>
+            <li class="control_menu_item" id="button512x512"><p>512X512</p></li>
+        </ul>
+        </div>
+        <div id="control">
+            <button id="load">Load</button>
+            <input type="text" id="textArea">
+            <button id="blackandwhite">B&W</button>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
